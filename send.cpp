@@ -25,10 +25,10 @@ int main(int argc, char *argv[]) {
 	mySwitch.enableTransmit(PIN);
     
     switch(command) {
-        case 1:
+        case 0:
             mySwitch.switchOn(systemCode, unitCode);
             break;
-        case 0:
+        case 1:
             mySwitch.switchOff(systemCode, unitCode);
             break;
         default:
