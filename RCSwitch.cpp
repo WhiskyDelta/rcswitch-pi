@@ -237,7 +237,9 @@ char* RCSwitch::getCodeWordA(char* sGroup, int nChannelCode, boolean bStatus) {
       sReturn[nReturnPos++] = 'F';
     } else if (sGroup[i] == '1') {
       sReturn[nReturnPos++] = '0';
-    } else {
+    } else if (sGroup[i] == 'F') {
+      sReturn[nReturnPos++] = '1';
+    ) else {
       return '\0';
     }
   }
